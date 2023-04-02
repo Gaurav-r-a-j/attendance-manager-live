@@ -1,0 +1,90 @@
+.big-card {
+    /* background: #181818; */
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    /* background: transparent; */
+}
+
+.card-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: max-content;
+}
+
+.icon-text {
+    display: flex;
+    color: white;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.icon-text .text {
+    color: #858585;
+    padding: 0 5px;
+}
+
+.option-icons {
+    display: flex;
+    align-items: center;
+}
+
+
+.option-icons span,
+.icon-text span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: inherit;
+    height: inherit; */
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+
+
+/* .card-left .icon-text span:nth-child(1) {
+    background-color: #3CB954;
+} */
+
+.card-left :nth-child(1) span {
+    background-color: #3CB954;
+
+}
+
+.card-left :nth-child(2) span {
+    background-color: #5A8DEE;
+}
+
+.option-icons :nth-child(1) {
+    background-color: #3CB954;
+}
+
+.option-icons :nth-child(2) {
+    background-color: #5A8DEE;
+}
+
+.option-icons :nth-child(3) {
+    background-color: #FEA700;
+}
+
+.option-icons :nth-child(4) {
+    background-color: #DD5143;
+}
+
+
+@media(max-width:600px) {
+
+    .option-icons span,
+    .icon-text span {
+        font-size: 1rem;
+    }
+
+    .icon-text {
+        font-size: .8rem;
+    }
+}

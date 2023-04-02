@@ -1,0 +1,30 @@
+.time-table {
+    min-height: 90vh;
+    background-color: black;
+    padding-top: 60px;
+}
+
+
+.time-table-container {
+    gap: 1px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 15px;
+}
+
+.time-table-container .day {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.time-table-container .day>p {
+    padding: 5px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    background-color: var(--current-color);
+}

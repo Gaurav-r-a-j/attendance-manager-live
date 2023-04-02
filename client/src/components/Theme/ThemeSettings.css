@@ -1,0 +1,135 @@
+.theme-overlay {
+    place-items: end;
+}
+
+.theme-settings {
+    position: sticky;
+    position: absolute;
+    width: 400px;
+    height: 100vh;
+    background-color: white;
+    right: 0;
+    top: 0;
+    right: -400px;
+    padding: 20px;
+    z-index: 100;
+    transition: all 0.3s ease-in;
+    animation: slidein 0.3s ease forwards;
+}
+
+@keyframes slidein {
+    from {
+        right: -400px;
+    }
+
+    to {
+        right: 0px;
+    }
+}
+
+
+
+
+.color-picker label {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
+    cursor: grab;
+    border-radius: 50%;
+}
+
+.color-picker input {
+    /* display: none; */
+    width: 0;
+    height: 0;
+    right: 0;
+}
+
+/* .theme-settings-active{
+    animation: slideback 0.3s ease-in;
+}
+
+@keyframes slideback {
+    from{
+        right: 0px;
+    }to{
+        right: -400px;
+    }
+} */
+
+/* @keyframes slidein{
+    to{
+        right: 0px;
+    }
+} */
+
+
+
+
+
+.theme-settings .theme-sections:not(:last-child) {
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.theme-settings .theme-sections {
+    padding-top: 10px;
+}
+
+
+.theme-sections .theme-option {
+    font-size: 1rem;
+    /* background-color: rebeccapurple; */
+}
+
+.theme-option label {
+    padding-left: 10px;
+    text-align: center;
+    color: #333;
+
+}
+
+.theme-settings h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    padding-bottom: 10px;
+}
+
+.theme-colors {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.theme-colors button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+.cancel-btn {
+    font-size: 1.5rem;
+    color: rgb(158, 154, 154);
+    /* position: absolute; */
+    /* z-index: 1;
+    right: 20px; */
+    padding: 10px;
+    transition: all 0.2s;
+    border-radius: 50%;
+}
+
+.cancel-btn:hover {
+    background-color: royalblue;
+    color: white;
+}
+
+
+@media(max-width:600px) {
+    .theme-settings {
+        width: 100%;
+    }
+}

@@ -1,0 +1,38 @@
+/* .home {
+
+} */
+
+/* .subject-section-bg {
+    background-color: var(--c);
+} */
+
+.subject-section h2 {
+    padding: 10px;
+    color: #333;
+    margin-bottom: 20px;
+    /* background-color: var(--colorValue); */
+    /* filter:hue-rotate(280deg); */
+    border: 1px solid;
+    height: 40px;
+    border-radius: 10px;
+}
+
+
+.subject-section {
+    max-width: var(--max-width);
+    margin-inline: auto;
+}
+
+.subjects {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /* background-color: #4169e1; */
+    min-height: 400px;
+    display: grid;
+}
+
+@media(max-width:600px) {
+    .subject-section h2 {
+        border-radius: 5px;
+    }
+}

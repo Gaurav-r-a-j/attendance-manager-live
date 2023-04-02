@@ -1,0 +1,36 @@
+.footer {
+    font-size: 1rem;
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    color: #858585;
+    letter-spacing: 1px;
+}
+
+.theme-settings-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    background: royalblue;
+
+}
+
+.theme-settings-button span {
+    font-size: 2rem;
+    color: white;
+}
+
+
+
+
+@media(max-width:600px) {
+    .theme-settings-button {
+        padding: 5px;
+    }
+
+    .footer {
+        font-size: .7rem;
+    }
+}

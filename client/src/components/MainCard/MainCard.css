@@ -1,0 +1,120 @@
+.main-card {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.3s;
+    color: var(--seconday-color);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+}
+
+.main-card:hover {
+    box-shadow: rgb(0 0 0 / 16%) 0px 10px 36px 0px, rgb(0 0 0 / 6%) 0px 0px 0px 1px;
+    scale: 1.05;
+}
+
+
+
+.attendance-text {
+    color: #858585;
+}
+
+.subject-name {
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+    border-left: 8px solid;
+    /* border-radius: 50%; */
+    border-radius: 10px;
+    padding-left: 5px;
+    height: 40px;
+    line-height: 40px;
+}
+
+
+
+.main-card-left {
+    gap: 5px;
+}
+
+.attendance-text b {
+    color: white;
+    /* color: #3CB954; */
+    padding-left: 10px;
+    font-size: 1.3rem;
+}
+
+.main-card-status {
+    font-size: 1rem;
+}
+
+.main-card-status b {
+    font-weight: 600;
+    padding: 0 !important;
+}
+
+.main-card-status span {
+    font-size: 1.1rem;
+    color: #F44336;
+    font-weight: 800;
+}
+
+.main-card-dots {
+    gap: 2px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}
+
+.main-card-dot {
+    width: 5px;
+    height: 5px;
+    background: var(--colorValue);
+    border-radius: 50%;
+    opacity: .8;
+}
+
+
+.time-table-card{
+    border-radius: 1px;
+}
+
+
+@media(max-width:600px) {
+
+    .subject-name {
+        font-size: 1rem;
+        height: 20px;
+        line-height: 20px;
+    }
+
+    .main-card-status {
+        font-size: .9rem;
+    }
+
+    .main-card-status span {
+        font-size: 1rem;
+    }
+
+    .main-card-dot {
+        width: 3px;
+        height: 3px;
+    }
+
+    .subject-name {
+        border-radius: 5px;
+        border-left: 5px solid;
+    }
+
+    .attendance-text {
+        font-size: .8rem;
+    }
+
+    .main-card-left p b {
+        font-size: 1rem;
+    }
+
+}

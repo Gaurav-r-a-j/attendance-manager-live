@@ -1,0 +1,122 @@
+.user-background {
+    background-color: black;
+    min-height: 200px;
+    /* height: 300px; */
+    color: white;
+    padding-top: 70px;
+}
+
+.sample-text {
+    text-align: center;
+    /* color: red; */
+    position: sticky;
+    top: 68px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    z-index: 10;
+    background-color: #e82034;
+
+}
+
+/* .sample-text small {
+    color: var(--current-color);
+
+} */
+
+.user-background .user-background-content {
+    max-width: var(--max-width);
+    margin-inline: auto;
+    /* padding: 20px; */
+}
+
+.user-background-content .left {
+    /* flex: 1; */
+    width: 100%;
+
+}
+
+.user-background-content .right {
+    /* flex: 1; */
+    width: 100%;
+
+
+}
+
+.user-profile {
+    justify-content: flex-start;
+    /* background: #181818; */
+    height: inherit;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.user-img {
+    width: 80px;
+    height: 80px;
+    background-color: var(--current-color);
+    border-radius: 50%;
+}
+
+.user-img img {
+    width: inherit;
+    height: inherit;
+}
+
+.user-img *:empty {
+    display: none;
+}
+
+.user-img span {
+    font-size: 60px;
+}
+
+/* .user-name {} */
+
+.user-name p {
+    font-size: 1.2rem;
+    /* color: #06C270; */
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+
+.user-name small {
+    color: gainsboro;
+    font-weight: bold;
+    padding-right: 10px;
+    letter-spacing: 1px;
+}
+
+.adhar-number {
+    letter-spacing: 1.5px;
+}
+
+.adhar-number p {
+    font-size: 1rem;
+}
+
+.adhar-number span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 1rem;
+}
+
+
+
+@media(max-width:600px) {
+    .user-background-content {
+        flex-direction: column;
+    }
+
+    .sample-text {
+        font-size: 1rem;
+        top: 54px;
+
+    }
+
+    .adhar-number p {
+        font-size: .7rem;
+    }
+
+}

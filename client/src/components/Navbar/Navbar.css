@@ -1,0 +1,354 @@
+.header {
+    /* padding: 0 5%; */
+    font-family: "Rubik", sans-serif;
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    font-weight: 400;
+    line-height: 1.5;
+    height: -webkit-fill-available;
+    color: var(--color-white-100);
+    background-color: var(--color-black-500);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    transition: all 0.35s ease;
+}
+
+.menu .active_link {
+    /* color: #ec8ab1; */
+    color: var(--current-color);
+}
+
+
+.login_signup .user_found {
+    background-color: var(--current-color);
+    cursor: pointer;
+    font-weight: 600;
+    line-height: 1.1rem;
+
+}
+
+.login_signup .user_logout {
+    background-color: transparent;
+    border: 1px solid var(--current-color);
+    /* border: 1px solid #BB004B; */
+    cursor: pointer;
+    font-weight: 600;
+
+}
+
+.header.on-scroll {
+    background: var(--color-black-300);
+    box-shadow: var(--shadow-medium);
+}
+
+.navbar {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1rem;
+    width: 100%;
+    height: 4.25rem;
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 0 20px;
+}
+
+.brand {
+    font-family: inherit;
+    font-size: 1.625rem;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: -1px;
+    color: var(--color-white-100);
+    text-transform: uppercase;
+}
+
+.brand img {
+    width: 150px;
+}
+
+.menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    /* padding: 4rem 0 3rem; */
+    overflow: hidden;
+    background-color: var(--color-black-300);
+    box-shadow: var(--shadow-medium);
+    transition: all 0.4s ease-in-out;
+    z-index: 10;
+}
+
+
+.login_signup {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+/* when menu is active on mobile  */
+.menu.is-active {
+    top: 0;
+    width: 100%;
+    height: auto;
+    padding: 4rem 0 3rem;
+
+}
+
+.menu-inner {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    row-gap: 1.25rem;
+}
+
+
+.menu_item {
+    list-style: none;
+}
+
+
+
+.menu_link {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--color-white-100);
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.menu_link:hover {
+    color: var(--current-color);
+    border-bottom: 2px solid var(--current-color);
+}
+
+
+.menu_block {
+    display: inline-block;
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25;
+    user-select: none;
+    white-space: nowrap;
+    text-align: center;
+    margin-left: auto;
+    padding: 0.65rem 1.2rem;
+    border-radius: 5px;
+    text-transform: capitalize;
+    color: var(--color-white);
+    /* background-color: var(--color-blue-600); */
+    background-color: var(--current-color);
+    box-shadow: var(--shadow-medium);
+    transition: all 0.3s ease-in-out;
+}
+
+.login_signup button {
+    border: none;
+    outline: none;
+}
+
+
+
+.login_signup_btn {
+
+    cursor: pointer;
+}
+
+
+
+/* .burger {
+     position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    order: -1;
+    z-index: 100;
+    width: 1.75rem;
+    height: 1rem;
+    border: none;
+    outline: none;
+    background: none;
+    visibility: visible;
+    transform: rotate(0deg);
+    transition: 0.35s ease; 
+} */
+
+@media only screen and (min-width: 766px) {
+
+
+    .menu {
+        position: relative;
+        padding: 0;
+        transition: none;
+        top: 0;
+        width: auto;
+        height: auto;
+        padding: 0rem;
+        margin-left: auto;
+        background: none;
+        box-shadow: none;
+    }
+
+    .menu-inner {
+        display: flex;
+        flex-direction: row;
+        column-gap: 2rem;
+        margin: 0 auto;
+    }
+
+    .menu_link {
+        text-transform: capitalize;
+    }
+
+    /* .menu_block {
+        margin-left: 0rem;
+    } */
+}
+
+
+
+
+.burger {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    order: -1;
+    width: 1.75rem;
+    height: 2rem;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger_line {
+    background: #fff;
+    background: #fff;
+    border-radius: 10px;
+    height: 3px;
+    margin: 2px 0;
+    transition: .4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.burger_line:nth-child(1) {
+    /* top: 0px; */
+    width: 50%;
+
+}
+
+.burger_line:nth-child(2) {
+    /* top: 0.5rem; */
+    width: 100%;
+
+}
+
+.burger_line:nth-child(3) {
+    /* top: 1rem; */
+    width: 75%;
+
+}
+
+
+.burger.is-active .burger_line:nth-child(1) {
+    /* top: 0.5rem;
+    transform: rotate(135deg); */
+    transform-origin: bottom;
+    /* transform: rotatez(45deg) translate(8px, 0px) */
+    transform: rotatez(45deg) translate(3px, -1px);
+
+}
+
+.burger.is-active .burger_line:nth-child(2) {
+    /* right: -1.5rem;
+    opacity: 0;
+    visibility: hidden; */
+
+    transform-origin: top;
+    transform: rotatez(-45deg)
+}
+
+.burger.is-active .burger_line:nth-child(3) {
+    /* top: 0.5rem;
+    transform: rotate(-135deg); */
+
+    transform-origin: bottom;
+    width: 50%;
+    /* transform: translate(30px, -11px) rotatez(45deg); */
+    transform: translate(12px, -3px) rotatez(45deg);
+
+}
+
+
+
+.light_dark span {
+    font-size: 1rem;
+}
+
+@media only screen and (min-width: 766px) {
+    .burger {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+
+
+@media only screen and (max-width: 780px) {
+
+    .login_signup {
+        right: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .menu_block {
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    .header {
+        padding: 0 10px;
+    }
+
+    .navbar {
+        height: 3.5rem;
+        padding: 0px;
+    }
+
+    .login_signup {
+        right: 10px;
+    }
+
+    .brand {
+        font-size: 1rem;
+    }
+
+    /* .burger {
+        width: 1.5rem;
+        height: 1rem;
+    } */
+
+    .brand img {
+        width: 100px;
+    }
+}
+
+
+
+.navbar .left {
+    display: flex;
+}
